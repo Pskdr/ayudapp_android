@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -39,7 +40,7 @@ import java.util.TimerTask;
 
 
 public class PantallaRegistrar1 extends AppCompatActivity implements View.OnClickListener{
-    Button  btnRegistrar, btnIngresarRegistro;
+    ImageButton btnRegistrarGuardar, btnIngresarRegistro;
     EditText txtNombres,txtApellidos, txtNumeroDocumento, txtEmail, txtContraseña, txtTelefonoCelular, txtTelefonoFijo,
             txtDireccionResidencia;
     TextView txtFechaNacimiento;
@@ -69,7 +70,7 @@ public class PantallaRegistrar1 extends AppCompatActivity implements View.OnClic
 
 
 
-        btnRegistrar.setOnClickListener(new View.OnClickListener() {
+        btnRegistrarGuardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -342,7 +343,7 @@ public class PantallaRegistrar1 extends AppCompatActivity implements View.OnClic
         spnTipoSangre.setAdapter(adapter);
     }
     private void conectar(){
-        btnRegistrar = findViewById(R.id.btnRegistrarGuardar);
+        btnRegistrarGuardar = findViewById(R.id.btnRegistrarGuardar);
         btnIngresarRegistro = findViewById(R.id.btnIngresarRegistro);
         txtFechaNacimiento = findViewById(R.id.etFechaNacimiento);
         txtNombres = findViewById(R.id.etNombres);
