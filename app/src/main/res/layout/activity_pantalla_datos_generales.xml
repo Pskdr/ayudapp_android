@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaDatosGenerales"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="30">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pantalla6_7_8"
+            android:adjustViewBounds="true"
+            android:id="@+id/background"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRDatosGenerales"
+            android:src="@drawable/btn7_1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="70">
+
+        <EditText
+            android:id="@+id/etTelefonoFijo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Teléfono Fijo"
+            android:layout_weight="8"/>
+
+        <EditText
+            android:id="@+id/etCelular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="8"
+            android:hint="Teléfono Celular" />
+
+        <EditText
+            android:id="@+id/etDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="8"
+            android:hint="Dirección" />
+
+        <EditText
+            android:id="@+id/etRH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="8"
+            android:hint="RH" />
+
+        <EditText
+            android:id="@+id/etEPS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="8"
+            android:hint="EPS" />
+
+        <EditText
+            android:id="@+id/etPoliza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="8"
+            android:hint="Póliza de salud" />
+
+        <ImageButton
+            android:id="@+id/btnModificarDG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="true"
+            android:layout_marginHorizontal="50dp"
+            android:src="@drawable/btn7_2"
+            android:layout_weight="22"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

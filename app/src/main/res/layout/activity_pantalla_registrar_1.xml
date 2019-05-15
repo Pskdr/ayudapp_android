@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaRegistrar1"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgBackground"
+            android:src="@drawable/pantalla3_1"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+
+            />
+
+        <ImageButton
+            android:id="@+id/btnIngresarRegistro"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn3_1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="90"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:weightSum="17">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblCamposObligatorios"
+            android:layout_marginHorizontal="30dp"
+            android:text="El nombre, apellidos, tipo y numero de documento, numero de celular, email y contraseña son OBLIGATORIOS"
+            android:layout_weight="3"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="1"
+            >
+
+            <EditText
+                android:id="@+id/etNombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:hint="Nombres"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                />
+
+            <EditText
+                android:id="@+id/etApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:hint="Apellidos"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/etFechaNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:hint="Fecha Nacimiento"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:id="@+id/lblTipoDoc"
+                android:text="Tipo de documento"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:id="@+id/spnTipoDocumentoID"
+                android:layout_weight="1">
+            </Spinner>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/etDocumentoID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:hint="Numero de documento de identidad"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:id="@+id/etContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:hint="Contraseña"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:id="@+id/lblEPS"
+                android:text="EPS"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:id="@+id/spnEPS"
+                android:layout_weight="1"
+                android:gravity="center">
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:id="@+id/lblTipoSangre"
+                android:text="Tipo de Sangre"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:id="@+id/spnTipoSangre"
+                android:layout_weight="1"
+                >
+            </Spinner>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etTelefonoCelularRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:hint="TelefonoCelular"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/etTelefonoFijoRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:hint="Telefono fijo"
+            android:inputType="number"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/etDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:hint="Dirección de Residencia"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/btnRegistrarGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:src="@drawable/btn3_2"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_weight="2"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

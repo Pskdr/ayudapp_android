@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaMiPerfil">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pantalla6_7_8"
+        android:adjustViewBounds="true"
+        android:id="@+id/background"/>
+
+    <ImageButton
+        android:id="@+id/btnRMiPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn5_1"
+        android:adjustViewBounds="true"
+        android:layout_marginVertical="20dp"
+        android:scaleType="centerInside"
+        android:background="@android:color/transparent"
+        android:layout_alignBottom="@id/background"
+        android:layout_marginRight="100dp"/>
+
+    <LinearLayout
+        android:id="@+id/lyAgregarModificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/background"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="50dp">
+
+        <ImageButton
+            android:id="@+id/btnAgregar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn5_2"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/btnModificar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn5_3"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_below="@id/lyAgregarModificar"
+        android:layout_marginTop="50dp">
+
+        <ImageButton
+            android:id="@+id/btnDatosGenerales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn5_4"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:layout_marginHorizontal="10dp"/>
+
+        <ImageButton
+            android:id="@+id/btnInformacionAdicional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn5_5"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:layout_marginHorizontal="10dp"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

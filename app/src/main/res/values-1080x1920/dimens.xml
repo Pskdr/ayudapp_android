@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="altura_boton_alerta">3dp</dimen>
+    <dimen name="derecha_boton_alerta">52dp</dimen>
+    <dimen name="izquierda_boton_alerta">55dp</dimen>
+    <dimen name="altura_boton_ayudaaotros">30dp</dimen>
+    <dimen name="tamaño_boton_alerta_ancho">310dp</dimen>
+    <dimen name="tamaño_boton_alerta_alto">310dp</dimen>
+
+    <dimen name="altura_regreso_datosgenerales">30dp</dimen>
+</resources>

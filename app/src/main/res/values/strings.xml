@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">APPAlertas2</string>
+    <string name="altura_boton_alerta"></string>
+    <string name="derecha_boton_alerta"></string>
+    <string name="izquierda_boton_alerta"></string>
+    <string name="altura_boton_ayudaaotros"></string>
+    <string name="tamaño_boton_alerta_ancho"></string>
+
+</resources>

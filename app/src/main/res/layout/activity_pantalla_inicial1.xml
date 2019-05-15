@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaInicial1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pantalla1_5"
+        android:adjustViewBounds="true"
+        android:id="@+id/background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignBottom="@id/background"
+        android:weightSum="2"
+        android:layout_marginVertical="20dp">
+
+        <ImageButton
+            android:id="@+id/btnIngresarInicio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn1_1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:layout_alignBottom="@id/background"
+            android:layout_weight="1"
+            android:paddingHorizontal="10dp"
+            />
+
+        <ImageButton
+            android:id="@+id/btnRegistrarInicio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn1_2"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:layout_alignBottom="@id/background"
+            android:layout_weight="1"
+            android:paddingHorizontal="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
